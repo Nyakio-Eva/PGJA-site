@@ -1,10 +1,13 @@
-
+import Layout from './components/Layout'
 import Navbar from './components/Navigation'
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Layout>
+        <Navbar/>
+        
+      </Layout>
     </>
   )
 }

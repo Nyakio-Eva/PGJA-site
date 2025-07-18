@@ -17,10 +17,11 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
   return (
-    <nav className="bg-[#f5f3f0] text-gray-800 shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between h-14">
+    <nav className="bg-[#f5f3f0] text-gray-800 shadow-lg">
+      <div className="max-w-9xl mx-auto flex items-center justify-between h-16">
         {/* Logo */}
-        <div className="font-bold text-base text-gray-900 white-space-nowrap">
+        <div className="font-bold text-base text-gray-900 ml-4">
+          <img src="/pgjalogo.webp" alt="logo" className="object-contain h-10 w-10"/>
           Pioneer Girls Junior Academy
         </div>
 
@@ -29,13 +30,13 @@ export default function Navbar() {
           {navItems.map((item, index) => (
             <div
               key={index}
-              className="relative h-full flex items-center border-l border-gray-400 first:border-l-0 last:border-r"
+              className="relative h-4 flex items-center border-l border-gray-400 first:border-l-0 last:border-r"
               onMouseEnter={() => setActiveDropdown(index)}
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <div className="px-4 py-2 hover:bg-[#ede9e4] cursor-pointer h-full flex items-center transition-colors duration-200">
                 <div className="flex items-center space-x-1">
-                  <span className="text-sm font-medium whitespace-nowrap">{item.label}</span>
+                  <span className="text-sm font-bold whitespace-nowrap">{item.label}</span>
                   {item.hasDropdown && (
                     <ChevronDown 
                       size={14} 
