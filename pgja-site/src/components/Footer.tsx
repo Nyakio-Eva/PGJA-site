@@ -12,7 +12,7 @@ export default function Footer() {
                         <h4 className="text-lg font-bold text-[#c79e36ff] uppercase tracking-wide">Quick Links</h4>
                         <ul className="space-y-2 text-lg">
                             <li><Link to="/" className="slate-900 hover:text-[#c79e36ff] transition-colors flex items-center"> <ChevronRight className="w-4 h-4 mr-2 slate-900" /> Home</Link></li>
-                            <li><Link to="/inspire" className="slate-900 hover:text-[#c79e36ff] transition-colors flex items-center"><ChevronRight className="w-4 h-4 mr-2 slate-900" />Discover Who We Are</Link></li>
+                            <li><Link to="/discover-who-we-are" className="slate-900 hover:text-[#c79e36ff] transition-colors flex items-center"><ChevronRight className="w-4 h-4 mr-2 slate-900" />Discover Who We Are</Link></li>
                             <li><Link to="/pathways" className="slate-900 hover:text-[#c79e36ff] transition-colors flex items-center"><ChevronRight className="w-4 h-4 mr-2 slate-900" />Discover Pathways</Link></li>
                             <li><Link to="/student-life" className="slate-900 hover:text-[#c79e36ff] transition-colors flex items-center"><ChevronRight className="w-4 h-4 mr-2 slate-900" />Discover Student Life</Link></li>
                             <li><Link to="/student-life" className="slate-900 hover:text-[#c79e36ff] transition-colors flex items-center"><ChevronRight className="w-4 h-4 mr-2 slate-900" />Discover Talents</Link></li>
