@@ -336,7 +336,7 @@ const PathwayDetails: React.FC = () => {
       <div className="bg-gray-800 text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-4 text-yellow-600">Pioneer Girls Junior Academy</h3>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto sm:text-left">
             Join us in making learning interesting, exciting, and enjoyable! We take pride in being the School of Choice for those who value student discipline as a key factor in achieving success.
           </p>
         </div>
