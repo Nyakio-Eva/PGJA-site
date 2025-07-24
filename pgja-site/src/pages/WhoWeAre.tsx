@@ -17,7 +17,7 @@ const DiscoverWhoWeAre: React.FC<DiscoverSectionProps> = ({
       <div 
         className="flex flex-wrap p-2 bg-center bg-no-repeat bg-cover min-h-screen"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(121, 100, 55, 0.8), rgba(19, 20, 20, 0.6)), url("${backgroundImage}")`,
+          backgroundImage: `linear-gradient(0deg, rgba(119, 78, 17, 0.56), rgba(19, 20, 20, 0.6)), url("${backgroundImage}")`,
         }}
       >
         <div className="container mx-auto flex flex-wrap items-center justify-center gap-8 p-4">
@@ -39,7 +39,7 @@ const DiscoverWhoWeAre: React.FC<DiscoverSectionProps> = ({
           {/* Mission and Purpose Cards */}
           <div className="flex flex-col md:flex-row justify-center gap-8">
             {/* School's Mission Card */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-6 transform hover:scale-95 transition-transform duration-300">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-6 transform hover:scale-95 transition-transform duration-300">
               <h2 className="text-2xl font-bold text-amber-400 mb-4">Our Mission</h2>
               <p className="text-white text-lg sm:text-md md:text-3xl font-light">
                 To cultivate a vibrant and inclusive learning community where students are empowered to embrace their full potential, fostering intellectual curiosity, ethical character, and a lifelong commitment to contributing meaningfully to the world.
@@ -47,7 +47,7 @@ const DiscoverWhoWeAre: React.FC<DiscoverSectionProps> = ({
             </div>
 
             {/* Purpose Card */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-6 transform hover:scale-95 transition-transform duration-300">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-6 transform hover:scale-95 transition-transform duration-300">
               <h2 className="text-2xl font-bold text-amber-400 mb-4">Our Purpose</h2>
               <p className="text-white text-lg sm:text-md md:text-3xl font-light">
                 To provide a holistic education that nurtures the development of well-rounded individuals, equipping them with the knowledge, skills, and values necessary to live a life of abundance rich in intellectual growth, personal fulfillment, and positive impact on society.

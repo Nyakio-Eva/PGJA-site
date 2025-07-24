@@ -72,7 +72,7 @@ const LandingPage: React.FC = () => {
         }}
       >
         <div className="container mx-auto flex p-0">
-          <div className="w-full flex flex-col justify-center items-center min-w-[250px] break-words px-4">
+          <div className="w-full flex flex-col justify-center items-center min-w-[250px] break-words px-4 mt-24">
             <h1 
               className="text-left text-3xl sm:text-3xl  md:text-5xl lg:text-6xl font-bold mb-8 min-h-[3rem] px-4 text-white z-10"
             >
