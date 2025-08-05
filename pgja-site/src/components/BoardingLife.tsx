@@ -2,28 +2,28 @@ import React from "react";
 
 const BoardingLife: React.FC = () => {
   return (
-    <section className="w-full py-16 px-4 bg-slate-300 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden lg:flex">
-        {/* Image on the left */}
-        <div className="lg:w-1/2">
+    <section className="relative w-full md:py-10 bg-[#de9642] min-h-screen flex items-center">
+      <div className="max-w-9xl mx-auto rounded-2xl shadow-xl overflow-hidden">
+        {/* Image with text overlay */}
+        <div className="w-full relative">
           <img
             src="/boardinglife.webp"
             alt="Comfortable boarding house room"
-            className="w-full h-full object-cover"
+            className="w-full  min-h-[600px] object-cover inset-0 "
           />
-        </div>
 
-        {/* Text on the right */}
-        <div className="lg:w-1/2 p-12 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#FDC85E] mb-6">
-            Boarding Life
-          </h1>
-          <p className="text-lg md:text-xl text-gray-700">
-            Our boarding facilities offer a safe, comfortable, and welcoming
-            environment that quickly feels like a second home. We provide a
-            structured and supportive atmosphere where students can thrive
-            academically and socially.
-          </p>
+          {/* dark overlay */}
+          <div className="absolute inset-0 bg-black opacity-50 z-10" />
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-200 mb-6">
+             Boarding Life
+           </h1>
+           <p className="text-lg md:text-3xl text-gray-200 font-semibold">
+              Our boarding facilities offer a safe, comfortable, and welcoming
+              environment that quickly feels like a second home. 
+           </p>
+          </div>
         </div>
       </div>
     </section>

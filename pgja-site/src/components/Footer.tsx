@@ -129,7 +129,7 @@ export default function Footer() {
                 </div>
 
                 {/* Floating Circle Button */}
-                <div className="fixed bottom-8 left-10 z-50 transform -translate-x-1/2 animate-bounce">
+                <div className="fixed bottom-12 left-10 z-50 transform -translate-x-1/2 animate-bounce">
                     <Link
                         to="https://enquireto.pioneergroupofschools.co.ke/SignIn?ReturnUrl=%2F"
                         className="w-16 h-16 bg-[#de9642] text-white hover:bg-[#bfd5ee] hover:text-gray-900 transition-colors shadow-lg rounded-full flex items-center justify-center mx-auto text-center text-sm font-extrabold font-serif"
@@ -139,7 +139,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 {/* Scroll to Top */}
-                <div className="fixed bottom-12 right-2 z-50">
+                <div className="fixed bottom-14 right-2 z-50">
                     <button
                         className="bg-[#de9642] backdrop-blur-md w-10 h-10 rounded-full hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center shadow-lg"
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

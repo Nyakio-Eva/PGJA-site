@@ -177,7 +177,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="bg-[#e6e7e9ff] text-gray-800 shadow-lg relative">
+    <nav className="bg-[#e6e7e9ff] text-gray-800 shadow-[0_15px_25px_-5px_rgba(0,0,0,0.5)] relative z-50">
       <div className="w-full px-6 flex items-center justify-between h-full relative py-4">
         {/* Logo */}
         <div 

@@ -1,7 +1,8 @@
 
-// import React from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Aviation = () => {
+const Aviation: React.FC = () => {
   return (
     <div className="flex flex-col gap-0 bg-slate-200">
       {/* Background Section 1 */}
@@ -9,7 +10,7 @@ const Aviation = () => {
         className="flex flex-wrap w-full p-2 min-h-[300px] md:min-h-[500px] lg:min-h-[700px] bg-center bg-cover bg-fixed"
         style={{
           backgroundImage:
-            "linear-gradient(0deg, rgba(42,44,46,0.3), rgba(42,44,46,0.3)), url('/aviationtoy.webp')",
+            "url('/aviationtoy.webp')",
         }}
       >
         <div className="container mx-auto flex flex-wrap p-4 my-32 md:my-64">
@@ -37,7 +38,7 @@ const Aviation = () => {
           backgroundImage: "url('/junioraviators.webp')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="absolute inset-0 bg-black/5 z-0" />
         <div className="relative container-fluid mx-auto flex flex-wrap p-0 z-10">
           <div className="flex-grow flex flex-col justify-center min-w-[250px] w-full"></div>
         </div>
@@ -55,6 +56,14 @@ const Aviation = () => {
           </div>
         </div>
       </section>
+      <div className="pt-4 flex justify-start mb-10 md:ml-48 mx-auto">
+              <Link
+                to="/junior-coder"
+                className=" px-6 py-3 text-white font-bold text-lg md:text-xl bg-[#de9642] hover:bg-[#bdd6f0] transition rounded-md text-center"
+              >
+                Discover our Junior Coder
+              </Link>
+            </div>
     </div>
   );
 };
