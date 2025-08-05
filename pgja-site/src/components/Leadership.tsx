@@ -15,7 +15,7 @@ const Leadership: React.FC = () => {
         <div className="w-full md:w-1/2 text-center mt-10 md:mt-0">
           <Link
             to="/discover-pathways"
-            className="text-white text-xl font-semibold px-6 py-3 rounded-md bg-yellow-600 hover:bg-amber-500"
+            className="text-white text-xl font-bold px-6 py-3 rounded-md bg-[#f4a024] hover:bg-blue-200"
           >
             Discover Pathways
           </Link>

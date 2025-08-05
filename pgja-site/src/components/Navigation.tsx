@@ -91,6 +91,7 @@ export default function Navbar() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
+  const leaveTimeout = useRef<number | null>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -124,6 +125,10 @@ export default function Navbar() {
   };
 
   const handleMouseEnter = (index: number) => {
+    if (leaveTimeout.current) {
+      clearTimeout(leaveTimeout.current);
+      leaveTimeout.current = null;
+    }
     if (!isDropdownClicked) {
       setActiveDropdown(index);
     }
@@ -131,7 +136,9 @@ export default function Navbar() {
 
   const handleMouseLeave = () => {
     if (!isDropdownClicked) {
+      leaveTimeout.current = setTimeout(() => {
       setActiveDropdown(null);
+      }, 200);
     }
   };
 
@@ -145,8 +152,9 @@ export default function Navbar() {
     setActiveMobileDropdown(null);
   };
 
-  const handleMobileDropdownToggle = (index: number) => {
+ const handleMobileDropdownToggle = (index: number) => {
     setActiveMobileDropdown(activeMobileDropdown === index ? null : index);
+    handleNavigation(navItems[index].path);
   };
 
   const handleMobileItemClick = () => {
@@ -176,15 +184,15 @@ export default function Navbar() {
           className="font-bold text-base text-gray-900 flex items-center cursor-pointer z-20"  
           onClick={() => handleNavigation('/')}
         >
-          <div className="h-10 w-10 flex items-center justify-center text-white font-bold text-sm">
+          {/* <div className="h-10 w-10 flex items-center justify-center text-white font-bold text-sm">
             <img src="/pgjalogo.webp"/>
-          </div>
+          </div> */}
           <span className="ml-2">Pioneer Girls School</span>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="xl:hidden mobile-menu-button z-20 p-2 rounded-md hover:bg-[#cfa53aff] transition-colors duration-200"
+          className="xl:hidden mobile-menu-button z-20 p-2 rounded-md bg-[#f4a024] transition-colors duration-200"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -202,7 +210,7 @@ export default function Navbar() {
             >
               {item.hasDropdown ? (
                 <div
-                  className="flex items-center px-4 py-4 rounded-sm hover:bg-[#cfa53aff] cursor-pointer h-full transition-colors duration-200"
+                  className="flex items-center px-4 py-4 rounded-sm hover:bg-[#bdd6f0] cursor-pointer h-full transition-colors duration-200"
                   onClick={(e) => handleDropdownToggle(e, index)}
                 >
                   <NavLink to={item.path} className="text-md font-bold whitespace-nowrap">
@@ -216,13 +224,13 @@ export default function Navbar() {
               ) : (
                 <NavLink 
                   to={item.path} 
-                  className="px-4 py-4 rounded-sm hover:bg-[#cfa53aff] cursor-pointer h-full flex items-center transition-colors duration-200"
+                  className="px-4 py-4 rounded-sm hover:bg-[#bdd6f0] cursor-pointer h-full flex items-center transition-colors duration-200"
                 >
                   <span className="text-md font-bold whitespace-nowrap">{item.label}</span>
                 </NavLink>
               )}
               {item.hasDropdown && activeDropdown === index && (
-                <div className="absolute top-full left-0 mt-8 bg-[#bfd5ee] shadow-lg rounded-md border border-gray-200 z-50 min-w-max">
+                <div className="absolute top-full left-0 mt-8 bg-[#e6e7e9ff] shadow-lg rounded-md border border-gray-200 z-50 min-w-max">
                   <div className="p-2">
                     {item.options?.map((option, idx) =>
                       option.external ? (
@@ -231,7 +239,7 @@ export default function Navbar() {
                           href={option.path}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block py-1 text-sm text-gray-600 hover:bg-[#cfa53aff] rounded-md p-2 whitespace-nowrap"
+                          className="block py-1 text-sm text-gray-600 hover:bg-[#bdd6f0] rounded-md p-2 whitespace-nowrap"
                           onClick={handleDropdownItemClick}
                         >
                           {option.label}
@@ -240,7 +248,7 @@ export default function Navbar() {
                         <NavLink
                           key={idx}
                           to={option.path}
-                          className="block py-1 text-sm text-gray-600 hover:bg-[#cfa53aff] rounded-md p-2 whitespace-nowrap"
+                          className="block py-1 text-sm text-gray-600 hover:bg-[#bdd6f0] rounded-md p-2 whitespace-nowrap"
                           onClick={handleDropdownItemClick}
                         >
                           {option.label}

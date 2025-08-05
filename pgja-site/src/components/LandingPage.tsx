@@ -68,13 +68,13 @@ const LandingPage: React.FC = () => {
       <div
         className="relative flex min-h-screen items-center justify-center bg-cover bg-center p-4"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.34), rgba(0,0,0,0.5)), url("/landingpage.webp")`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.34)), url("/landingpage.webp")`,
         }}
       >
         <div className="container mx-auto flex p-0">
           <div className="w-full flex flex-col justify-center items-center min-w-[250px] break-words px-4 mt-24">
             <h1 
-              className="text-left text-3xl sm:text-3xl  md:text-5xl lg:text-6xl font-bold mb-8 min-h-[3rem] px-4 text-white z-10"
+              className="text-left text-3xl sm:text-2xl  md:text-3xl lg:text-4xl font-bold mt-12 min-h-[3rem] px-4 text-white z-10"
             >
               {displayedText}
               
@@ -84,7 +84,7 @@ const LandingPage: React.FC = () => {
               ref={buttonRef}
               href="/discover-who-we-are/"
               className={`
-                inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold z-10 mt-48
+                inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold z-10 mt-48 
                 rounded-lg shadow-lg transition-all duration-300 transform
                 ${isButtonVisible 
                   ? 'opacity-100 translate-x-0' 
@@ -140,10 +140,10 @@ const LandingPage: React.FC = () => {
             </div>
 
             {/* Modal Footer */}
-            <div className="flex flex-col sm:flex-row gap-3 p-2 my-2 border-t border-gray-200">
+            <div className="flex justify-end p-4 border-t border-gray-200">
               <button
                 onClick={closeModal}
-                className="flex-1 py-2 bg-slate-200 hover:bg-gray-600 text-blue-900 font-medium rounded-lg transition-colors duration-200"
+                className="px-4 py-2 bg-slate-400 rounded hover:bg-gray-400 text-sm font-semibold mx-4"
               >
                 Close
               </button>
@@ -151,7 +151,7 @@ const LandingPage: React.FC = () => {
                 href="https://enquireto.pioneergroupofschools.co.ke/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-2 bg-blue-900 hover:bg-slate-700 text-white font-medium rounded-lg text-center transition-colors duration-200"
+                 className="px-4 py-2 bg-blue-900 hover:bg-[#b08a2f] text-white rounded text-sm font-semibold"
               >
                 Apply Now
               </a>

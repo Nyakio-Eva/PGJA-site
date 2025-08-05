@@ -12,16 +12,16 @@ const Pathways: React.FC = () => {
       <div className="w-full flex flex-wrap max-w-7xl mx-auto">
         {/* Text Section */}
         <div className="w-full lg:w-2/3 flex flex-col justify-center px-4 my-20 lg:my-40">
-          <h1 className="text-left text-[#F7C948] text-2xl sm:text-3xl md:text-4xl font-semibold leading-relaxed">
+          <h1 className="text-left text-white text-2xl sm:text-3xl md:text-4xl font-semibold leading-relaxed">
             Our students are taken through the CBE Curriculum, and we major on <br />
             <p>
             Science, Technology, Engineering and Mathematics. </p>
           </h1>
           <a
             href="/pathway-details"
-            className="bg-yellow-600 text-white font-bold text-xl px-6 py-4 rounded shadow hover:brightness-110 transition mt-10 md:w-1/2"
+            className="bg-[#f4a024] text-white font-bold text-xl px-6 py-4 rounded shadow hover:brightness-110 transition mt-10 md:w-1/3 whitespace-nowrap"
           >
-            Explore Pathway Details
+            Discover Pathway Details
           </a>
         </div>
 

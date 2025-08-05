@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Heart, AlertTriangle, Camera, MapPin, Users } from 'lucide-react';
+import { Shield, Heart, AlertTriangle } from 'lucide-react';
 
 interface SecurityFeatureProps {
   title: string;
