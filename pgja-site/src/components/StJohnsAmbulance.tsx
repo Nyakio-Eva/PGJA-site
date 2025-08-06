@@ -54,13 +54,13 @@ const StJohnAmbulance: React.FC<StJohnAmbulanceProps> = ({ className = '' }) => 
                 {services.map((service, index) => (
                   <div 
                     key={index}
-                    className="bg-white/30 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 p-6 hover:bg-white/20 transition-colors duration-200"
+                    className="bg-gray-200/30 backdrop-blur-md rounded-lg shadow-xl border border-white/20 p-6 hover:bg-white/20 transition-colors duration-200"
                   >
                     <div className="relative z-10">
                       <h5 className="text-white text-lg sm:text-xl font-semibold mb-4 leading-tight">
                         {service.title}
                       </h5>
-                      <p className="text-white/90 text-md sm:text-base leading-relaxed">
+                      <p className="text-white text-md sm:text-base leading-relaxed">
                         {service.description}
                       </p>
                     </div>

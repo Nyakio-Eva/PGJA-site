@@ -34,17 +34,17 @@ const Golf: React.FC<GolfProps> = ({ className = '' }) => {
         <div className="container-fluid w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <div className="w-full max-w-6xl">
-              <div className="relative bg-white/30 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 overflow-hidden">
+              <div className="relative bg-gray-200/40 backdrop-blur-md rounded-lg shadow-xl border border-white/20 overflow-hidden">
                 {/* Card Background Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 to-emerald-700/20"></div>
                 
                 {/* Card Content */}
-                <div className="relative z-10 p-6 sm:p-8 lg:p-12 text-center">
-                  <p className="text-white text-center text-lg sm:text-xl lg:text-2xl mb-8 font-medium leading-relaxed">
+                <div className="relative z-10 p-6 sm:p-8 lg:p-12 text-left">
+                  <p className="text-white text-lg sm:text-xl lg:text-2xl mb-8 font-medium leading-relaxed">
                     The golf program at Pioneer Girls Junior is more than just swinging clubs and sinking putts. It's a dynamic platform where young girls not only hone their golfing skills but also cultivate valuable life lessons and friendships on the green terrain.
                   </p>
                   <br />
-                  <p className="text-white text-center text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed">
+                  <p className="text-white text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed">
                     The program is designed to cater to girls of all skill levels, from beginners to advanced players. The instructors understand that every girl is unique and progresses at her own pace. Therefore, they foster an inclusive and supportive environment where girls feel empowered to embrace challenges and strive for improvement.
                   </p>
                 </div>

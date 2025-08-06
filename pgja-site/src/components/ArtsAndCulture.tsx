@@ -33,7 +33,7 @@ const ArtsCulture: React.FC<ArtsCultureProps> = ({ className = '' }) => {
         <div className="container-fluid w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center md:mt-32">
             <div className="w-full max-w-6xl">
-              <div className="relative bg-white/20 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 overflow-hidden">
+              <div className="relative bg-gray-200/20 backdrop-blur-md rounded-lg shadow-xl border border-white/20 overflow-hidden">
                 {/* Card Background Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-700/20"></div>
                 
