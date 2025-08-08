@@ -7,7 +7,7 @@ const AccessButton: React.FC<{ text: string, to: string, icon: React.ElementType
   <Link
     to={to}
     role="button"
-    className="flex items-center justify-center bg-amber-500 text-slate-800 hover:bg-slate-300 font-bold uppercase text-sm px-6 py-8 rounded-md shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out text-center"
+    className="flex items-center justify-center bg-[#de9642] text-slate-800 hover:bg-slate-300 font-bold uppercase text-sm px-6 py-8 rounded-md shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out text-center"
   >
     <Icon className="mr-2 h-5 w-5" />
     {text}
