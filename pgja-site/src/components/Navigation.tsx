@@ -64,9 +64,9 @@ const navItems = [
     path: "/discover-fees", 
     hasDropdown: true, 
     options: [
-      { label: "Grade 7", path: "/discover-fees/grade-7" },
-      { label: "Grade 8", path: "/discover-fees/grade-8" },
-      { label: "Grade 9", path: "/discover-fees/grade-9" },
+      { label: "Grade 7 Fees", path: "/discover-fees/grade-7" },
+      { label: "Grade 8 Fees", path: "/discover-fees/grade-8" },
+      { label: "Grade 9 Fees", path: "/discover-fees/grade-9" },
       { label: "Terms & Conditions", path: "/fees/terms-conditions" },
     ] 
   },

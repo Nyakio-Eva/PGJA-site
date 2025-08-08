@@ -72,7 +72,7 @@ const LandingPage: React.FC = () => {
         }}
       >
         <div className="container mx-auto flex p-0">
-          <div className="w-full flex flex-col justify-center items-center min-w-[250px] break-words px-4 mt-24">
+          <div className="w-full flex flex-col justify-center items-start min-w-[250px] break-words px-4 mt-24">
             <h1 
               className="text-left text-3xl sm:text-2xl  md:text-3xl lg:text-4xl font-bold mt-12 min-h-[3rem] px-4 text-white z-10"
             >
@@ -84,18 +84,18 @@ const LandingPage: React.FC = () => {
               ref={buttonRef}
               href="/discover-who-we-are/"
               className={`
-                inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold z-10 mt-48 
+                inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold z-10 ml-2 mt-4
                 rounded-lg shadow-lg transition-all duration-300 transform
                 ${isButtonVisible 
                   ? 'opacity-100 translate-x-0' 
                   : 'opacity-0 -translate-x-24'
                 }
                 hover:scale-105 hover:shadow-xl
-                text-sm sm:text-base md:text-lg
+                text-md sm:text-base md:text-lg
               `}
               style={{
-                background: 'linear-gradient(135deg, #66cbeaff 0%, #a7b0c0ff 100%)',
-                border: '2px solid rgba(255, 255, 255, 0.2)',
+                background: 'linear-gradient(135deg, #5dbaf0ff 0%, #a7b0c0ff 100%)',
+                borderBottom: '4px solid rgba(223, 241, 252, 0.79)',
                 backdropFilter: 'blur(10px)'
               }}
             >

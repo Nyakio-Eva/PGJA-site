@@ -88,9 +88,9 @@ function App() {
           <Route path="/join-us/enquire" element={<Enquire />} />
 
           {/* Fees Sub-routes */}
-          <Route path="/fees/grade-7" element={<FeesGrade7 />} />
-          <Route path="/fees/grade-8" element={<FeesGrade8 />} />
-          <Route path="/fees/grade-9" element={<FeesGrade9/>} /> 
+          <Route path="/discover-fees/grade-7" element={<FeesGrade7 />} />
+          <Route path="/discover-fees/grade-8" element={<FeesGrade8 />} />
+          <Route path="/discover-fees/grade-9" element={<FeesGrade9/>} /> 
           <Route path="/fees/terms-conditions" element={<TermsAndConditions/>} />
 
           {/* Get Access Sub-items */}
