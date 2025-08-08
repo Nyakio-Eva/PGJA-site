@@ -36,10 +36,10 @@ import JoinGrade8 from './components/JoinGrade8.tsx';
 import FeesGrade7 from './components/FeesGrade7.tsx';
 import FeesGrade8 from './components/FeesGrade8.tsx';
 import FeesGrade9 from './components/FeesGrade9.tsx';
-import Calendar from './components/Calendar.tsx';
 import BoardingLife from './components/BoardingLife.tsx';
 import StudentAccess from './components/StudentAccess.tsx';
 import StaffAccess from './components/StaffAccess.tsx';
+import CalendarOfEvents from './components/Calendar.tsx';
 
 function App() {
   return (
@@ -94,7 +94,7 @@ function App() {
           <Route path="/fees/terms-conditions" element={<TermsAndConditions/>} />
 
           {/* Get Access Sub-items */}
-          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/calendar" element={<CalendarOfEvents />} />
           <Route path="/student-access" element={<StudentAccess />} /> 
           <Route path="/staff-access" element={<StaffAccess />} />
 
