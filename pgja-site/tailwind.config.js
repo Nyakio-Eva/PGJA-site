@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sansita': ['Sansita', 'sans-serif'],
+        'sans': ['Sansita', 'ui-sans-serif', 'system-ui', 'sans-serif'], // Make Sansita the default sans font
+      },
+    },
   },
   plugins: [],
 }
